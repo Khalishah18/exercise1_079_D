@@ -63,13 +63,13 @@ namespace exercise1_079_D
                 //KS = j
                 for (int KS = 0; KS < n - 1; KS++)
                 {
-                    if (Lis[KS] < Lis[KS + 1]) //jika elemen tidak dalam urutan yang benar
+                    if (Lis[KS] > Lis[KS + 1]) //jika elemen tidak dalam urutan yang benar
                     {
                         // tukar elemen
                         int temp;
                         temp = Lis[KS];
                         Lis[KS] = Lis[KS + 1];
-                        Lis[n - 1] = temp;
+                        Lis[KS - 1] = temp;
                     }
                 }
             }
